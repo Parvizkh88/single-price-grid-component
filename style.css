@@ -1,0 +1,132 @@
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    box-sizing: border-box;
+    margin: 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 330px 330px;
+    grid-template-rows: 200px 250px;
+    grid-template-areas:
+        "join join"
+        "monthly why";
+}
+
+.container1 {
+    grid-area: join;
+    background-color: white;
+    padding: 15px 37px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.container2 {
+    grid-area: monthly;
+    background-color: hsl(179, 62%, 43%);
+    padding: 15px 37px;
+    border-bottom-left-radius: 8px;
+}
+
+.container3 {
+    grid-area: why;
+    background-color: hsl(179, 62%, 45%);
+    border-bottom-right-radius: 8px;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: hsl(71, 73%, 54%);
+    font-size: medium;
+}
+
+p {
+    color: white;
+}
+
+.container1 p {
+    color: hsl(218, 22%, 67%);
+}
+
+.container1 h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+.container3 h2 {
+    margin: 37px 37px 10px 37px;
+}
+
+.call {
+    color: hsl(204, 43%, 93%);
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 50px;
+    color: hsl(204, 43%, 93%);
+}
+
+.price {
+    font-size: 200%;
+    font-weight: bold;
+    color: white;
+}
+
+.button {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(71, 73%, 54%);
+    font-size: large;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: auto auto 5px;
+    display: block;
+    color: white;
+}
+
+@media (max-width:500px) {
+    .container {
+        display: grid;
+        grid-template-columns: 330px;
+        grid-template-rows: 250px 250px 250px;
+        grid-template-areas:
+            "join"
+            "monthly"
+            "why";
+    }
+}
+
+@media (max-width:500px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+@media (max-width:500px) {
+    .container2 {
+        border-bottom-left-radius: 0%;
+    }
+}
+
+@media (max-width:500px) {
+    .container3 {
+        border-bottom-left-radius: 8px;
+    }
+}
